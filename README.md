@@ -116,6 +116,11 @@ einen bestimmten Zweck. Soweit gesetzlich zulässig, haften weder der Ersteller 
 Kontoflux.io für Schäden, die aus der Nutzung dieser Skills oder aus Entscheidungen
 auf Grundlage ihrer Ergebnisse entstehen.
 
+## License
+
+[MIT](LICENSE) © 2026 Industrial Code & Magic GmbH (Kontoflux.io). The license's
+warranty and liability terms apply in addition to the disclaimer above.
+
 ## Credits
 
 Written for Kontoflux.io. Topics and structure were inspired by public collections

@@ -30,10 +30,11 @@ jobs:
           cd skills
           for dir in */; do
             name="${dir%/}"
+            cp ../LICENSE "${name}/LICENSE.txt"
             zip -r "../dist/${name}.zip" "$name"
           done
           cd ..
-          zip -r dist/kontoflux-finance-skills.zip skills
+          zip -r dist/kontoflux-finance-skills.zip skills LICENSE README.md
 
       - name: Publish release
         env:
