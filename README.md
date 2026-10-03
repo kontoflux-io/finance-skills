@@ -10,6 +10,10 @@ The skills are written in German, follow the open [Agent Skills](https://agentsk
 format and are read-only: no skill triggers payments, cancels contracts or sends
 messages.
 
+> **Note:** These skills support your own work. They do not replace professional
+> bookkeeping, tax or legal advice and are provided as is. See the
+> [disclaimer](#disclaimer).
+
 ## Skills
 
 | Skill | What it does |
@@ -79,10 +83,38 @@ Then ask, for example:
 - Bank data reflects the last synchronisation, not real time. Every skill states
   the data timestamp.
 - Kontoflux.io categories are general spending groups, not SKR03/SKR04 accounts.
-- Tax and legal content (VAT return, default interest, direct debit refund periods)
-  is general information and not tax or legal advice.
 - Where your data is processed after retrieval depends on the agent and model you
   use.
+
+## Disclaimer
+
+These skills are tools that support your own work. They do not replace professional
+bookkeeping, accounting, tax or legal advice, and they do not automatically take over
+the services of your tax advisor, accountant or bank. Tax and legal content (such as
+the VAT return, default interest or direct debit refund periods) is general
+information. Results can be incomplete or wrong: check them before you rely on them,
+submit anything to the tax office or make decisions.
+
+The skills are provided "as is", without warranty of any kind, express or implied,
+including accuracy, completeness and fitness for a particular purpose. To the extent
+permitted by law, neither the creator nor Kontoflux.io is liable for any damage
+arising from the use of these skills or from decisions based on their results.
+
+### Haftungsausschluss
+
+Diese Skills unterstützen dich bei deiner eigenen Arbeit. Sie ersetzen keine
+professionelle Buchhaltung, Steuerberatung oder Rechtsberatung und übernehmen nicht
+automatisch die Leistungen deiner Steuerberatung, Buchhaltung oder Bank. Steuerliche
+und rechtliche Inhalte (etwa zur Umsatzsteuer-Voranmeldung, zu Verzugszinsen oder zu
+Lastschrift-Fristen) sind allgemeine Informationen. Ergebnisse können unvollständig
+oder fehlerhaft sein: Prüfe sie, bevor du dich darauf verlässt, etwas beim Finanzamt
+einreichst oder Entscheidungen triffst.
+
+Die Skills werden ohne Gewähr bereitgestellt, ohne ausdrückliche oder stillschweigende
+Zusicherung, insbesondere hinsichtlich Richtigkeit, Vollständigkeit oder Eignung für
+einen bestimmten Zweck. Soweit gesetzlich zulässig, haften weder der Ersteller noch
+Kontoflux.io für Schäden, die aus der Nutzung dieser Skills oder aus Entscheidungen
+auf Grundlage ihrer Ergebnisse entstehen.
 
 ## Credits
 
