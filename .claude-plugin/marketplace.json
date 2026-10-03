@@ -1,0 +1,16 @@
+{
+  "name": "kontoflux",
+  "description": "Agent skills by Kontoflux.io for German finance workflows with your own bank accounts.",
+  "owner": {
+    "name": "Kontoflux.io",
+    "url": "https://kontoflux.io"
+  },
+  "plugins": [
+    {
+      "name": "kontoflux-finance",
+      "source": "./",
+      "description": "German finance skills for the Kontoflux.io MCP server: payment matching, dunning, month-end close, cash forecast, VAT return prep, subscriptions and reports.",
+      "category": "productivity"
+    }
+  ]
+}

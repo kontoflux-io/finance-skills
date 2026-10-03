@@ -1,0 +1,41 @@
+name: Release skill ZIPs
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check plugin versions match the tag
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          for f in plugin.json .claude-plugin/plugin.json; do
+            version="$(jq -r .version "$f")"
+            if [ "$version" != "$tag" ]; then
+              echo "::error file=$f::version $version does not match tag $GITHUB_REF_NAME"
+              exit 1
+            fi
+          done
+
+      - name: Build ZIPs
+        run: |
+          mkdir dist
+          cd skills
+          for dir in */; do
+            name="${dir%/}"
+            zip -r "../dist/${name}.zip" "$name"
+          done
+          cd ..
+          zip -r dist/kontoflux-finance-skills.zip skills
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" dist/*.zip --title "$GITHUB_REF_NAME" --generate-notes
